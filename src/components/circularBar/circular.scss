@@ -1,0 +1,19 @@
+@import "../../comman.scss";
+
+.circularContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 40%;
+  margin: 5px;
+  .circularTag {
+    color: $high_color;
+  }
+
+  .circularbar {
+    width: 70%;
+    height: 70%;
+  }
+}

@@ -1,0 +1,44 @@
+$base_color: #1c292b;
+$base_dark: #1d4144;
+$base_color_trans: #44eaea3d;
+$high_color: #44eaea;
+$high_color_two: #44eaeadc;
+$low_color: #0b3838bb;
+$small_color: #459090;
+$color_light: #ccc1bf;
+$color_light_trans: #ccc1bf34;
+$color_green: #1fc484;
+
+$extra-larg: 1080px;
+$large-medium: 980px;
+$large-width: 920px;
+$medium-width: 580px;
+$small-width: 380px;
+
+@mixin extraLarg {
+  @media screen and  (max-width: #{$extra-larg}) {
+    @content;
+  }
+}
+@mixin largeMedium {
+  @media screen and  (max-width: #{$large-medium}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and  (max-width: #{$large-width}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and  (max-width: #{$medium-width}) {
+    @content;
+  }
+}
+@mixin small {
+  @media screen and  (max-width: #{$small-width}) {
+    @content;
+  }
+}

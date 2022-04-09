@@ -1,0 +1,89 @@
+@import "../../comman.scss";
+
+.experience {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .expUpper {
+    flex: 2;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p{
+      color:$small_color ;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 25px;
+      font-weight: 400;
+      color: orangered;
+    }
+  }
+  .expCenter {
+    flex: 6;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    .expCenterLeft {
+      backdrop-filter: blur(10px);
+      width: 40vw;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border: 2px solid $high_color;
+      border-radius: 10px;
+    }
+    .expCenterRight {
+      background-color: $base_dark;
+      border-radius: 10px;
+      width: 40vw;
+      height: 50vh;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      .centerRightItems {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  .expLower {
+    flex: 3;
+  }
+}
+
+@include largeMedium{
+  .experience{
+    .expCenter{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      .expCenterLeft{
+        width: 90%;
+        height: 40%;
+        margin-bottom: 20px;
+      }
+      .expCenterRight{
+        width: 90%;
+        height: 40%;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

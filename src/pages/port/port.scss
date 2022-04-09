@@ -1,0 +1,87 @@
+@import "../../comman.scss";
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 400;
+    color: $high_color;
+    background-color: $base_dark;
+    span {
+      margin-left: 100px;
+    }
+  }
+  .portList {
+    display: flex;
+    margin: 10px;
+
+  
+  }
+  .portContainer {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .portContainerItem {
+      width: 250px;
+      height: 200px;
+      margin: 0px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      border: 2px solid $base_color_trans;
+      backdrop-filter: blur(10px);
+      cursor: pointer;
+      .itemImg {
+        width: 95%;
+        height: 95%;
+      }
+      .itemTitile {
+        background-color: $low_color;
+        backdrop-filter: blur(1px);
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: $base_color;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;
+        color: $color_green;
+        text-decoration: none;
+      }
+      &:hover {
+        .itemTitile {
+          z-index: 2;
+        }
+      }
+    }
+  }
+
+  @include large {
+    .portList {
+      .portListItems {
+        width: 70px;
+        font-size: 13px;
+      }
+    }
+  }
+  @include small {
+    .portList {
+      .portListItems {
+        width: 50px;
+        font-size: 10px;
+        height: 25px;
+      }
+    }
+  }
+}

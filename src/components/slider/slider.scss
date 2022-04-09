@@ -1,0 +1,38 @@
+@import "../../comman.scss" ;
+
+
+.exptleftItems {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+  
+  p {
+    width:100px;
+    color: $high_color;
+    margin-right: 5px;
+    text-align: center;
+  }
+  h4 {
+    color: $high_color;
+    margin-left: 5px;
+  }
+  .barHolder {
+    width: 75%;
+    height: 8px;
+    background-color: $base_color;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgb(24, 201, 255);
+    
+
+    .barSlider {
+      width: 0;
+      background-color: $high_color;
+      height: 4px;
+      transition: all 1.5s ease-out ;
+    }
+  }
+}

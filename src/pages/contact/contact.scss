@@ -1,0 +1,359 @@
+@import "../../comman.scss";
+
+.contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  .contactLeft {
+    flex: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .contactLeftUpper {
+      flex: 6;
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $high_color;
+      margin: 5px;
+      .leftUpperImg {
+        flex: 6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        animation: move 2s infinite;
+        animation-direction: alternate;
+        img {
+          width: 60%;
+        }
+      }
+      @keyframes move {
+        from {
+          top: -5%;
+        }
+        to {
+          top: 2%;
+        }
+      }
+
+      .leftUpperText {
+        flex: 7;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        i {
+          color: $color_green;
+        }
+        p {
+          color: $small_color;
+        }
+        h3 {
+          font-weight: 400;
+          color: rgba(0, 255, 255, 0.678);
+          background-color: $base_dark;
+          padding: 5px;
+          border-radius: 5px;
+          a {
+            text-decoration: none;
+            color: inherit;
+          }
+        }
+      }
+    }
+    .contactLeftlower {
+      flex: 6;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .leftLowerLeft {
+        flex: 6;
+        border: 1px solid $high_color;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .leftLowerImg {
+          height: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          animation: updown 2s infinite;
+          animation-direction: alternate;
+          img {
+            width: 30%;
+          }
+        }
+
+        @keyframes updown {
+          from {
+            position: relative;
+            top: -3%;
+          }
+          to {
+            position: relative;
+            top: 2%;
+          }
+        }
+
+        .leftlowerText {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          i {
+            color: $color_green;
+          }
+          p {
+            color: $small_color;
+          }
+          h3 {
+            font-weight: 400;
+            color: rgba(0, 255, 255, 0.678);
+            background-color: $base_dark;
+            padding: 5px;
+            border-radius: 5px;
+            a {
+              text-decoration: none;
+              color: inherit;
+            }
+          }
+        }
+      }
+      .leftLowerRight {
+        flex: 6;
+        border: 1px solid $high_color;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .leftLowerImg {
+          height: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          animation: updown 2s infinite;
+          animation-direction: alternate;
+          img {
+            width: 30%;
+          }
+        }
+        .leftlowerText {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          i {
+            color: $color_green;
+          }
+          p {
+            color: $small_color;
+          }
+          h3 {
+            font-weight: 400;
+            color: rgba(0, 255, 255, 0.678);
+            background-color: $base_dark;
+            padding: 5px;
+            border-radius: 5px;
+            a {
+              text-decoration: none;
+              color: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contactRight {
+    flex: 55%;
+    height: 100%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .contactRightUpper {
+      flex: 5;
+      width: 100%;
+      border: 1px solid $high_color;
+      margin: 5px;
+      background-color: pink;
+      position: relative;
+      overflow: hidden;
+      .green {
+        width: 100%;
+        height: 100%;
+        background-color: $low_color;
+        z-index: 2;
+        position: absolute;
+      }
+      img {
+        width: 100%;
+        height: 150%;
+        position: absolute;
+      }
+      .contectRightText {
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h3 {
+          color: $high_color;
+          font-size: 30px;
+        }
+        p {
+          color: $color_green;
+        }
+      }
+    }
+    .contactRightLower {
+      flex: 7;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid $high_color;
+      margin: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .contactName {
+        width: 70%;
+        height: 40px;
+        margin: 10px;
+        text-align: center;
+        margin-top: 20px;
+        border: 1px solid $high_color;
+        background: none;
+        color: base_color;
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .contactEmail {
+        width: 70%;
+        height: 40px;
+        margin: 10px;
+        text-align: center;
+        margin-top: 20px;
+        border: 1px solid $high_color;
+        background: none;
+        color: base_color;
+        &:focus {
+          outline: none;
+        }
+      }
+
+      textarea {
+        width: 70%;
+        height: 120px;
+        margin-top: 10px;
+        text-align: center;
+        border: none;
+        background: none;
+        border: 1px solid $high_color;
+        &:focus {
+          outline: none;
+          color: wheat;
+        }
+      }
+
+      button {
+        width: 150px;
+        height: 40px;
+        margin: 20px;
+        border: none;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: $high_color;
+      }
+    }
+  }
+}
+
+@include largeMedium {
+  .contact {
+    flex-direction: column;
+
+    .contactRight {
+      width: 98%;
+      .contactRightLower {
+        height: 40%;
+        textarea{
+          height: 80px;
+        }
+
+        button {
+          width: 150px;
+        }
+      }
+    }
+  }
+}
+
+@include medium {
+  .contact {
+    .contactLeft {
+      .contactLeftUpper {
+        .leftUpperText {
+          h3 {
+            padding: 0;
+            font-size: 14px;
+          }
+        }
+      }
+      .leftLowerLeft {
+        .leftlowerText {
+          i {
+            display: none;
+          }
+          p {
+            display: n;
+          }
+
+          h3 {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .leftLowerRight {
+        .leftlowerText {
+          i {
+            display: none;
+          }
+          p {
+            display: n;
+          }
+
+          h3 {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .contactRight {
+      .contactRightUpper {
+        display: none;
+      }
+    }
+  }
+}
