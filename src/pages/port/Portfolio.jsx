@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import webOne from "../../assets/vec05.jpg";
 import "./port.scss";
 import PortList from "../../components/portlist/PortList";
 import {

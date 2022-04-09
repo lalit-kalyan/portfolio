@@ -8,7 +8,7 @@ const CircularBar = ({ bSkills, bPercentage }) => {
 
   useEffect(() => {
     setPercent(bPercentage);
-  }, []);
+  }, [bPercentage]);
   return (
     <>
       <div className="circularContainer">
