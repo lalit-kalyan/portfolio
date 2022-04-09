@@ -69,7 +69,7 @@ const Contact = () => {
               </i>
               <p>Messenger</p>
               <h3>
-                <a>Send me a Message</a>
+                <p >Send me a Message</p>
               </h3>
             </div>
           </div>
