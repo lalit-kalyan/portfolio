@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Slider from "../../components/slider/Slider";
 import CircularBar from "../../components/circularBar/CircularBar";
 import "./exp.scss";
