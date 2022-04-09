@@ -14,7 +14,7 @@ export const featuredProjects = [
   {
     id: 3,
     title: "E-Commerce ",
-    img: "/images/card03.jpg",
+    img: "/images/e-comm.PNG",
     url:"https://e-comm1408.netlify.app/"
   },
   {
@@ -26,7 +26,7 @@ export const featuredProjects = [
   {
     id: 5,
     title: " E-com",
-    img: "/images/card05.jpg",
+    img: "/images/blog.PNG",
     url:"https://e-comm1408.netlify.app"
   },
   {
