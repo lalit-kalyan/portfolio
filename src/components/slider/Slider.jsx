@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./slider.scss";
 
 const Slider = ({ title, percentage }) => {
@@ -7,11 +7,10 @@ const Slider = ({ title, percentage }) => {
   setTimeout(() => {
     const newStyle = {
       opacity: 1,
-      width: percentage+ "%",
+      width: percentage + "%",
     };
     setStyle(newStyle);
   }, 2000);
-  
 
   return (
     <>
