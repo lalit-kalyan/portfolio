@@ -22,13 +22,13 @@ const Footer = () => {
             <div className="footerSocial">
               <ul className="socialList" >
               <li className="socialListItems">
-                  <a href=""> <AiOutlineFacebook/> </a>
+                  <a href="#"> <AiOutlineFacebook/> </a>
                 </li>
                 <li className="socialListItems">
-                  <a href=""> <AiOutlineInstagram/> </a>
+                  <a href="#"> <AiOutlineInstagram/> </a>
                 </li>
                 <li className="socialListItems">
-                  <a href=""> <AiOutlineYoutube/> </a>
+                  <a href="#"> <AiOutlineYoutube/> </a>
                 </li>
               </ul>
             </div>
